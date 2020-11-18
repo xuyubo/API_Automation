@@ -32,10 +32,8 @@ class GetPages:
         pages = parse()
         for page, value in pages.items():
             parameters = value['parameters']
-            data_list = []
+            data_list = [parameter for parameter in parameters]
 
-            for parameter in parameters:
-                data_list.append(parameter)
             _page_list[page] = data_list
 
         return _page_list

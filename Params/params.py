@@ -16,8 +16,7 @@ path_dir = str(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir
 
 def get_parameter(name):
     data = tools.GetPages().get_page_list()
-    param = data[name]
-    return param
+    return data[name]
 
 
 class Basic:
@@ -26,10 +25,13 @@ class Basic:
     url = []
     data = []
     header = []
-    for i in range(0, len(params)):
+    for i in range(len(params)):
         url.append(params[i]['url'])
         data.append(params[i]['data'])
         header.append(params[i]['header'])
+
+
+
 
 
 class Collections:
@@ -38,10 +40,13 @@ class Collections:
     url = []
     data = []
     header = []
-    for i in range(0, len(params)):
+    for i in range(len(params)):
         url.append(params[i]['url'])
         data.append(params[i]['data'])
         header.append(params[i]['header'])
+
+
+
 
 
 class Personal:
@@ -50,10 +55,13 @@ class Personal:
     url = []
     data = []
     header = []
-    for i in range(0, len(params)):
+    for i in range(len(params)):
         url.append(params[i]['url'])
         data.append(params[i]['data'])
         header.append(params[i]['header'])
+
+
+
 
 
 class Login:
@@ -62,7 +70,7 @@ class Login:
     url = []
     data = []
     header = []
-    for i in range(0, len(params)):
+    for i in range(len(params)):
         url.append(params[i]['url'])
         data.append(params[i]['data'])
         header.append(params[i]['header'])

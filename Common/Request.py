@@ -59,8 +59,7 @@ class Request:
 
         Common.Consts.STRESS_LIST.append(time_consuming)
 
-        response_dicts = dict()
-        response_dicts['code'] = response.status_code
+        response_dicts = {'code': response.status_code}
         try:
             response_dicts['body'] = response.json()
         except Exception as e:
@@ -107,8 +106,7 @@ class Request:
 
         Common.Consts.STRESS_LIST.append(time_consuming)
 
-        response_dicts = dict()
-        response_dicts['code'] = response.status_code
+        response_dicts = {'code': response.status_code}
         try:
             response_dicts['body'] = response.json()
         except Exception as e:
@@ -166,8 +164,7 @@ class Request:
 
         Common.Consts.STRESS_LIST.append(time_consuming)
 
-        response_dicts = dict()
-        response_dicts['code'] = response.status_code
+        response_dicts = {'code': response.status_code}
         try:
             response_dicts['body'] = response.json()
         except Exception as e:
@@ -214,8 +211,7 @@ class Request:
 
         Common.Consts.STRESS_LIST.append(time_consuming)
 
-        response_dicts = dict()
-        response_dicts['code'] = response.status_code
+        response_dicts = {'code': response.status_code}
         try:
             response_dicts['body'] = response.json()
         except Exception as e:

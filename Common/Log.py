@@ -30,8 +30,6 @@ def create_file(filename):
     if not os.path.isfile(filename):
         fd = open(filename, mode='w', encoding='utf-8')
         fd.close()
-    else:
-        pass
 
 def set_handler(levels):
     if levels == 'error':
